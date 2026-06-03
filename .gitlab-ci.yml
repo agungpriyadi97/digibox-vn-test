@@ -30,7 +30,7 @@ katalon_digiboxvn_test:
       if [ -z "$TEST_PATH" ]; then
         echo "Running default Digibox Regression Collection..."
         # Gunakan ekstensi .tsc jika file adalah Test Suite Collection
-        export FINAL_PATH="Test Suites/WEB/Web_Test_Suite_Collection/Regression_Digiboxvn_Web.tsc"
+        export FINAL_PATH="Test Suites/WEB/Web_Test_Suite_Collection/Regression_Digiboxvn_Web.ts"
         export ARG_TYPE="-testSuiteCollectionPath"
       else
         echo "Running custom test: $TEST_PATH"
