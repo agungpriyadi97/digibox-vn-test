@@ -12,7 +12,7 @@ variables:
   # This prevents the "Out of Memory" crashes on heavy pages like Digibox
   GS_OPTIONS: "-Xmx2048m -Xms512m -Djava.shm.size=2g"
 
-katalon_digiboxkh_test:
+katalon_digiboxvn_test:
   stage: test
   tags:
     - infra
