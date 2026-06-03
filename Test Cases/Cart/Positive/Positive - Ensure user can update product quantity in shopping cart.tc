@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Memastikan user dapat memperbarui jumlah produk di keranjang belanja</description>
-   <name>Positive - Ensure user can update product quantity in shopping cart</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>e526e7a5-7887-4556-a18c-b272f3daffec</testCaseGuid>
-</TestCaseEntity>

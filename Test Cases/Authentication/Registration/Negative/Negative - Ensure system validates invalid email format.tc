@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Memastikan sistem memvalidasi format email yang tidak valid</description>
-   <name>Negative - Ensure system validates invalid email format</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>e522e498-5ab5-43a3-8158-80081a023150</testCaseGuid>
-</TestCaseEntity>

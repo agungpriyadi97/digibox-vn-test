@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Negative - Ensure login fails when account field is empty</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>64c5a13b-9f09-428c-9e1e-c967e352e8b2</testCaseGuid>
+</TestCaseEntity>

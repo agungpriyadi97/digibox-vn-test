@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Positive - Ensure Create an account link redirects user to registration page</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>31041c64-12c4-4540-8677-f0026c20b853</testCaseGuid>
-</TestCaseEntity>

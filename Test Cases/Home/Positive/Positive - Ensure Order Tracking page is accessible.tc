@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Memastikan halaman pelacakan pesanan dapat diakses</description>
-   <name>Positive - Ensure Order Tracking page is accessible</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>838569c4-8502-48c1-9b1f-b10782e58431</testCaseGuid>
-</TestCaseEntity>

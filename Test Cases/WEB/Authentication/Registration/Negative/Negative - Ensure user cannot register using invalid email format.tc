@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Ensure user cannot register using invalid email format</description>
+   <name>Negative - Ensure user cannot register using invalid email format</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6a7b00a6-991f-4d6b-843e-2737451aa47c</testCaseGuid>
+</TestCaseEntity>

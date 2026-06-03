@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Memastikan harga produk ditampilkan dengan benar</description>
+   <name>Positive - Ensure product price is displayed correctly</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b77d2e12-ec71-4bf6-9414-6696fe749afd</testCaseGuid>
+</TestCaseEntity>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Memastikan pesan validasi “Please enter a valid email address.” muncul untuk email tidak valid</description>
-   <name>Negative - Ensure validation message Please enter a valid email address appears for invalid email</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>ad7a82b1-c4b2-4817-b968-a50a7d272144</testCaseGuid>
-</TestCaseEntity>

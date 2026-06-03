@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Memastikan menu Audio ditampilkan</description>
+   <name>Positive - Ensure Audio menu is displayed</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5539fca9-602e-4e3a-a5b7-3655758cbc7d</testCaseGuid>
+</TestCaseEntity>

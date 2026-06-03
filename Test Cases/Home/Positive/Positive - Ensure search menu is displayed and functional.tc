@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Memastikan menu pencarian ditampilkan dan berfungsi dengan baik</description>
-   <name>Positive - Ensure search menu is displayed and functional</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>2f084969-bdc8-4042-88ca-00ebfa5dd9c7</testCaseGuid>
-</TestCaseEntity>

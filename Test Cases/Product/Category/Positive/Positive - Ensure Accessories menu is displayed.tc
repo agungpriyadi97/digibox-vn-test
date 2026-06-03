@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Memastikan menu Accessories ditampilkan</description>
-   <name>Positive - Ensure Accessories menu is displayed</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>516a6bdd-1a4a-4ca9-96ff-93243da11636</testCaseGuid>
-</TestCaseEntity>

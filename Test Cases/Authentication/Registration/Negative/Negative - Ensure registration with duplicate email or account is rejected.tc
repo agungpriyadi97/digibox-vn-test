@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Memastikan registrasi dengan email atau account yang sudah terdaftar ditolak</description>
-   <name>Negative - Ensure registration with duplicate email or account is rejected</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>495fac42-7390-49f0-bf8b-c8ac38f39d3f</testCaseGuid>
-</TestCaseEntity>

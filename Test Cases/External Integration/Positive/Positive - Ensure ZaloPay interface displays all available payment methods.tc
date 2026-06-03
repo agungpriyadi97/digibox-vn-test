@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Memastikan antarmuka ZaloPay menampilkan seluruh metode pembayaran yang tersedia</description>
-   <name>Positive - Ensure ZaloPay interface displays all available payment methods</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>945a24ba-dd2f-467d-9813-ed7db18fb79d</testCaseGuid>
-</TestCaseEntity>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Memastikan login gagal menggunakan account atau email yang belum terdaftar</description>
-   <name>Negative - Ensure login fails using unregistered account or email</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>a6095577-c2da-4320-ae8e-628ee279828a</testCaseGuid>
-</TestCaseEntity>

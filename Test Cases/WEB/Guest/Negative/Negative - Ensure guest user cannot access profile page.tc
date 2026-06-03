@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Memastikan guest tidak dapat mengakses halaman profil</description>
+   <name>Negative - Ensure guest user cannot access profile page</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f043b0eb-5248-4667-9f00-10d626f39fbb</testCaseGuid>
+</TestCaseEntity>

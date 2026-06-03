@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Memastikan user dapat menambahkan produk ke keranjang belanja</description>
-   <name>Positive - Ensure user can add product to cart</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>5740a570-5e94-4daa-b3c5-60834ffce508</testCaseGuid>
-</TestCaseEntity>

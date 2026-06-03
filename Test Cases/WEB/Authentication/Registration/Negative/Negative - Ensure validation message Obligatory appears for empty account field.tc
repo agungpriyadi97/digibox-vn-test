@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Memastikan pesan validasi “Obligatory” muncul ketika field account kosong</description>
+   <name>Negative - Ensure validation message Obligatory appears for empty account field</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>65dc6784-5d67-4b60-b9f0-1daa8577d24a</testCaseGuid>
+</TestCaseEntity>

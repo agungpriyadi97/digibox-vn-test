@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Memastikan jumlah produk pada ikon keranjang ditampilkan dengan benar</description>
+   <name>Positive - Ensure total cart quantity on header icon is displayed correctly</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5288f533-895e-4773-95bf-b56f4c92b6f7</testCaseGuid>
+</TestCaseEntity>

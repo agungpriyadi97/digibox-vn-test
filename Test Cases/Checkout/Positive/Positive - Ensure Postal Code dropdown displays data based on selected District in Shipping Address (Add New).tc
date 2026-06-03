@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Memastikan dropdown Kode Pos pada alamat pengiriman menampilkan data sesuai distrik yang dipilih saat tambah alamat</description>
-   <name>Positive - Ensure Postal Code dropdown displays data based on selected District in Shipping Address (Add New)</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>e53d9cef-28ef-4923-8e54-814ff5f271b2</testCaseGuid>
-</TestCaseEntity>

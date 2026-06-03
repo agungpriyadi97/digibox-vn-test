@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Memastikan opsi pembayaran ZaloPay ditampilkan</description>
-   <name>Positive - Ensure ZaloPay payment option is displayed</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>dbba8188-1fad-4098-acd5-0341b9762716</testCaseGuid>
-</TestCaseEntity>

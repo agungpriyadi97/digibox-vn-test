@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Memastikan informasi stok produk ditampilkan dengan benar</description>
-   <name>Positive - Ensure product stock information is displayed correctly</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>ec844428-ad39-47f8-99e5-f69fc1df6531</testCaseGuid>
-</TestCaseEntity>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Memastikan user dapat mengakses halaman detail produk (PDP)</description>
-   <name>Positive - Ensure user can access Product Detail Page (PDP)</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>7e28fc27-68b5-43de-a626-03402b168a1b</testCaseGuid>
-</TestCaseEntity>

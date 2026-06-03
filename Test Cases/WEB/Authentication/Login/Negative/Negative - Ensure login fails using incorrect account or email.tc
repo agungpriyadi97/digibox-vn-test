@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Memastikan login gagal menggunakan account atau email yang salah</description>
+   <name>Negative - Ensure login fails using incorrect account or email</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9d77b575-2702-4ffe-8876-ba1eb92f9abc</testCaseGuid>
+</TestCaseEntity>

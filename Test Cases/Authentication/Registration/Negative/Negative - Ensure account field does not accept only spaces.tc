@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Memastikan field account tidak menerima input hanya spasi</description>
-   <name>Negative - Ensure account field does not accept only spaces</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>9162709b-bd6a-4ee7-8e07-30a02946bfed</testCaseGuid>
-</TestCaseEntity>

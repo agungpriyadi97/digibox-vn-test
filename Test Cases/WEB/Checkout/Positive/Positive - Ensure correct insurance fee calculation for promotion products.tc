@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Memastikan perhitungan biaya asuransi untuk produk promo sesuai</description>
+   <name>Positive - Ensure correct insurance fee calculation for promotion products</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ac770205-4339-410c-9479-3af99515d0bc</testCaseGuid>
+</TestCaseEntity>

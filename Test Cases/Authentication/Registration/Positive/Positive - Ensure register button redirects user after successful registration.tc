@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Positive - Ensure register button redirects user after successful registration</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>c97469b4-2ead-4294-83c6-cc559150aee5</testCaseGuid>
-</TestCaseEntity>

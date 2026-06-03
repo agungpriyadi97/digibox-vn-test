@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Memastikan pesan validasi hilang setelah input valid dimasukkan</description>
+   <name>Positive - Ensure validation messages disappear after valid input is entered</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>efbc2e20-4b33-4c8b-9774-695dc14e41a8</testCaseGuid>
+</TestCaseEntity>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Memastikan user dapat menjelajahi website sebagai guest</description>
-   <name>Positive - Ensure user can explore the website as a guest</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>bafad61a-c953-4653-a5ab-302601d362ba</testCaseGuid>
-</TestCaseEntity>

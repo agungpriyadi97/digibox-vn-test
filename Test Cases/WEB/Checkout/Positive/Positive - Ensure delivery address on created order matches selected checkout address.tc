@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Memastikan alamat pengiriman pada order yang dibuat sesuai dengan alamat yang dipilih saat checkout</description>
+   <name>Positive - Ensure delivery address on created order matches selected checkout address</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9192171f-954a-46d1-8414-179f8cef9cf3</testCaseGuid>
+</TestCaseEntity>
