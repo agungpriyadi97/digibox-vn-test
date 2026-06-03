@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Memastikan menu Tablets ditampilkan</description>
+   <name>Positive - Ensure Ipad menu is displayed</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1a56b6b8-308e-4dc2-9d99-05d64d126d22</testCaseGuid>
+</TestCaseEntity>

@@ -16,4 +16,37 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import utils.MenuHoverHelper
+
+WebUI.mouseOver(findTestObject('Home/Header/Menu/Menu Accessories/menu_Accessories'))
+
+WebUI.waitForElementVisible(findTestObject('Home/Header/Menu/Menu Accessories/submenu_USB_C_Cable'), 10)
+
+WebUI.click(findTestObject('Home/Header/Menu/Menu Accessories/submenu_USB_C_Cable'))
+
+WebUI.waitForPageLoad(10)
+
+WebUI.mouseOver(findTestObject('Home/Header/Menu/Menu Accessories/menu_Accessories'))
+
+WebUI.waitForElementVisible(findTestObject('Home/Header/Menu/Menu Accessories/submenu_AirPods_Pro_Magsafe'), 10)
+
+WebUI.click(findTestObject('Home/Header/Menu/Menu Accessories/submenu_AirPods_Pro_Magsafe'))
+
+WebUI.waitForPageLoad(10)
+
+WebUI.mouseOver(findTestObject('Home/Header/Menu/Menu Accessories/menu_Accessories'))
+
+WebUI.waitForElementVisible(findTestObject('Home/Header/Menu/Menu Accessories/submenu_Discover_Accessories'), 10)
+
+WebUI.click(findTestObject('Home/Header/Menu/Menu Accessories/submenu_Discover_Accessories'))
+
+WebUI.waitForPageLoad(10)
+
+WebUI.mouseOver(findTestObject('Home/Header/Menu/Menu Accessories/menu_Accessories'))
+
+WebUI.waitForElementVisible(findTestObject('Home/Header/Menu/Menu Accessories/submenu_iPhone_Case'), 10)
+
+WebUI.click(findTestObject('Home/Header/Menu/Menu Accessories/submenu_iPhone_Case'))
+
+WebUI.waitForPageLoad(10)
 

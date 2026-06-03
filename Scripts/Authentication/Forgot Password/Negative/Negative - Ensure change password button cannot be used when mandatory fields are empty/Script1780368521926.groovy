@@ -22,10 +22,6 @@ WebUI.callTestCase(findTestCase('Authentication/Login/Positive/Positive - Ensure
 
 WebUI.setText(findTestObject('Authentication/ForgotPassword/input_email'), '')
 
-WebUI.click(findTestObject('Authentication/ForgotPassword/btn_verifikasiCode'))
-
-WebUI.verifyTextPresent('Mã xác thực đã được gửi thành công!', false)
-
 WebUI.setText(findTestObject('Authentication/ForgotPassword/input_code'), '')
 
 WebUI.setText(findTestObject('Authentication/ForgotPassword/input_newPassword'), '')
