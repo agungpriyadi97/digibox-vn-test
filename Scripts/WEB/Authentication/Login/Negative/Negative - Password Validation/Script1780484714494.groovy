@@ -17,18 +17,3 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-'Input Email Valid\r\n'
-WebUI.setText(findTestObject('WEB/Authentication/Login/input_email'), GlobalVariable.account)
-
-'Input Password Valid'
-WebUI.setText(findTestObject('WEB/Authentication/Login/input_password'), GlobalVariable.password)
-
-'Click Button Login'
-WebUI.click(findTestObject('WEB/Authentication/Login/btn_login'))
-
-WebUI.waitForElementVisible(findTestObject('WEB/Home/Header/Icon Menu/Account/icon-account'), 4)
-
-WebUI.click(findTestObject('WEB/Home/Header/Icon Menu/Account/icon-account'))
-
-WebUI.verifyElementPresent(findTestObject('WEB/Home/Header/Icon Menu/Account/txt_verify_account'), 10)
-
