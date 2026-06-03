@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Memastikan menu Enterprise and Education ditampilkan</description>
+   <name>Positive - Ensure Installment Plans menu is displayed</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ce271178-a53d-4b75-a566-f5c3dc956ed7</testCaseGuid>
+</TestCaseEntity>

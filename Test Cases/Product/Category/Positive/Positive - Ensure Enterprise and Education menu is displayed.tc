@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Memastikan menu Enterprise and Education ditampilkan</description>
-   <name>Positive - Ensure Enterprise and Education menu is displayed</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>29fcba38-4fa8-4e4c-8cb0-1304cc651762</testCaseGuid>
-</TestCaseEntity>

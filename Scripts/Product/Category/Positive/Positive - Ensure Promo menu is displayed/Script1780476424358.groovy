@@ -17,3 +17,35 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.mouseOver(findTestObject('Home/Header/Menu/Menu Promo/menu_promo'))
+
+WebUI.waitForElementVisible(findTestObject('Home/Header/Menu/Menu Promo/submenu_Flash_sale'), 10)
+
+WebUI.click(findTestObject('Home/Header/Menu/Menu Promo/submenu_Flash_sale'))
+
+WebUI.waitForPageLoad(10)
+
+WebUI.mouseOver(findTestObject('Home/Header/Menu/Menu Promo/menu_promo'))
+
+WebUI.waitForElementVisible(findTestObject('Home/Header/Menu/Menu Promo/submenu_Pre_order'), 10)
+
+WebUI.click(findTestObject('Home/Header/Menu/Menu Promo/submenu_Pre_order'))
+
+WebUI.waitForPageLoad(10)
+
+WebUI.mouseOver(findTestObject('Home/Header/Menu/Menu Promo/menu_promo'))
+
+WebUI.waitForElementVisible(findTestObject('Home/Header/Menu/Menu Promo/submenu_Pre_test'), 10)
+
+WebUI.click(findTestObject('Home/Header/Menu/Menu Promo/submenu_Pre_test'))
+
+WebUI.waitForPageLoad(10)
+
+WebUI.mouseOver(findTestObject('Home/Header/Menu/Menu Promo/menu_promo'))
+
+WebUI.waitForElementVisible(findTestObject('Home/Header/Menu/Menu Promo/submenu_Khuyen_Mai_Tet_2026'), 10)
+
+WebUI.click(findTestObject('Home/Header/Menu/Menu Promo/submenu_Khuyen_Mai_Tet_2026'))
+
+WebUI.waitForPageLoad(10)
+

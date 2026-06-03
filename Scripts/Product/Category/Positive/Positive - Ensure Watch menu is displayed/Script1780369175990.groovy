@@ -17,3 +17,27 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.mouseOver(findTestObject('Home/Header/Menu/Menu Watch/menu_Watch'))
+
+WebUI.waitForElementVisible(findTestObject('Home/Header/Menu/Menu Watch/submenu_Apple Watch Series 3'), 10)
+
+WebUI.click(findTestObject('Home/Header/Menu/Menu Watch/submenu_Apple Watch Series 3'))
+
+WebUI.waitForPageLoad(10)
+
+WebUI.mouseOver(findTestObject('Home/Header/Menu/Menu Watch/menu_Watch'))
+
+WebUI.waitForElementVisible(findTestObject('Home/Header/Menu/Menu Watch/submenu_Apple Watch Nike Series 4'), 10)
+
+WebUI.click(findTestObject('Home/Header/Menu/Menu Watch/submenu_Apple Watch Nike Series 4'))
+
+WebUI.waitForPageLoad(10)
+
+WebUI.mouseOver(findTestObject('Home/Header/Menu/Menu Watch/menu_Watch'))
+
+WebUI.waitForElementVisible(findTestObject('Home/Header/Menu/Menu Watch/submenu_Apple Watch Nike Series 5'), 10)
+
+WebUI.click(findTestObject('Home/Header/Menu/Menu Watch/submenu_Apple Watch Nike Series 5'))
+
+WebUI.waitForPageLoad(10)
+

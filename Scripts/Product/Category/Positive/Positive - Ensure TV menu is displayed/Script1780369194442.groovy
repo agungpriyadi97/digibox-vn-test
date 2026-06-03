@@ -17,3 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.mouseOver(findTestObject('Home/Header/Menu/Menu TV/menu_TV'))
+
+WebUI.waitForElementVisible(findTestObject('Home/Header/Menu/Menu TV/submenu_Apple_TV_Generasi_4'), 10)
+
+WebUI.click(findTestObject('Home/Header/Menu/Menu TV/submenu_Apple_TV_Generasi_4'))
+

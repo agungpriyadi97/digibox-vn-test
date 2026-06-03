@@ -32,6 +32,9 @@ WebUI.setText(findTestObject('Authentication/Registration/input_account'), user.
 'Input Password'
 WebUI.setText(findTestObject('Authentication/Registration/input_password'), '')
 
+'Klik Register'
+WebUI.click(findTestObject('Authentication/Registration/btn_register'))
+
 'Verify Success Registration'
 WebUI.verifyTextPresent('Bắt buộc', false)
 

@@ -17,35 +17,19 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.waitForElementVisible(findTestObject('Home/Header/Menu/Menu Iphone/menu_iphone'), 10)
+WebUI.mouseOver(findTestObject('Home/Header/Menu/Menu Learn more/Menu Learn more'))
 
-WebUI.mouseOver(findTestObject('Home/Header/Menu/Menu Iphone/menu_iphone'))
+WebUI.waitForElementVisible(findTestObject('Home/Header/Menu/Menu Learn more/submenu_iPhone_LearnMore'), 10)
 
-WebUI.click(findTestObject('Home/Header/Menu/Menu Iphone/submenu_iPhone_XR'))
-
-WebUI.waitForPageLoad(10)
-
-WebUI.mouseOver(findTestObject('Home/Header/Menu/Menu Iphone/menu_iphone'))
-
-WebUI.click(findTestObject('Home/Header/Menu/Menu Iphone/submenu_iPhone_SE'))
+WebUI.click(findTestObject('Home/Header/Menu/Menu Learn more/submenu_iPhone_LearnMore'))
 
 WebUI.waitForPageLoad(10)
 
-WebUI.mouseOver(findTestObject('Home/Header/Menu/Menu Iphone/menu_iphone'))
+WebUI.mouseOver(findTestObject('Home/Header/Menu/Menu Learn more/Menu Learn more'))
 
-WebUI.click(findTestObject('Home/Header/Menu/Menu Iphone/submenu_iPhone_12'))
+WebUI.waitForElementVisible(findTestObject('Home/Header/Menu/Menu Learn more/submenu_Apple_Watch_LearnMore'), 10)
 
-WebUI.waitForPageLoad(10)
-
-WebUI.mouseOver(findTestObject('Home/Header/Menu/Menu Iphone/menu_iphone'))
-
-WebUI.click(findTestObject('Home/Header/Menu/Menu Iphone/submenu_Discover'))
-
-WebUI.waitForPageLoad(10)
-
-WebUI.mouseOver(findTestObject('Home/Header/Menu/Menu Iphone/menu_iphone'))
-
-WebUI.click(findTestObject('Home/Header/Menu/Menu Iphone/submenu_Demo_info'))
+WebUI.click(findTestObject('Home/Header/Menu/Menu Learn more/submenu_Apple_Watch_LearnMore'))
 
 WebUI.waitForPageLoad(10)
 

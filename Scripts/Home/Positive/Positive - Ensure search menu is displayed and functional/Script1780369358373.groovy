@@ -17,3 +17,18 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+not_run: WebUI.callTestCase(findTestCase('Authentication/Login/Positive/Positive - Ensure user can log in using valid account and password'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.waitForElementClickable(findTestObject('Home/Header/Icon Menu/Search/icon_search'), 10)
+
+WebUI.click(findTestObject('Home/Header/Icon Menu/Search/icon_search'))
+
+WebUI.verifyElementPresent(findTestObject('Home/Header/Icon Menu/Search/icon_search'), 5)
+
+WebUI.setText(findTestObject('Home/Header/Icon Menu/Search/input_search'), 'iphone')
+
+WebUI.sendKeys(findTestObject('Home/Header/Icon Menu/Search/input_search'), Keys.chord(Keys.ENTER))
+
+WebUI.waitForPageLoad(10)
+
