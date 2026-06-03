@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>btn_buyNow</name>
+   <tag></tag>
+   <elementGuidId>dde284b6-f654-4b78-86be-fadd0a413af0</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>button.el-button.add-btn.buy-now.el-button--plain.gt-button</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@type='plain']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;Mua ngay&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>24b412db-6cc9-4330-8668-e76ec3a9b1c2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>plain</value>
+      <webElementGuid>5358ad22-293f-48a6-847f-e7cb98d23fc2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>el-button add-btn buy-now el-button--plain gt-button</value>
+      <webElementGuid>12bd204a-274d-46ef-8618-9201c73be71f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+            Mua ngay
+          </value>
+      <webElementGuid>b6c73a31-148a-4ffd-a33c-fe2d1a3f79f4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;page-view&quot;)/div[@class=&quot;gt-layout page-layout_pc&quot;]/div[@class=&quot;page-view__child&quot;]/section[@class=&quot;page-pdp page-pdp&quot;]/section[@class=&quot;page-pdp_content&quot;]/div[@class=&quot;page-pdp_content__main&quot;]/div[@class=&quot;right&quot;]/div[@class=&quot;new-action-box&quot;]/div[1]/button[@class=&quot;el-button add-btn buy-now el-button--plain gt-button&quot;]</value>
+      <webElementGuid>f8e42d27-58e1-4c2e-b728-b17f17d1f2d6</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//button[@type='plain']</value>
+      <webElementGuid>5bfad6a5-6deb-490b-842b-2688c1f5dfbf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='page-view']/div/div[3]/section/section/div/div[2]/div[5]/div/button</value>
+      <webElementGuid>ad151277-aa09-4d2c-ab22-9c513a665774</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Thêm vào giỏ hàng'])[1]/following::button[1]</value>
+      <webElementGuid>58446797-c01f-4b3e-967b-97833f64aba0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Chat Zalo tư vấn &amp; đặt hàng'])[1]/preceding::button[1]</value>
+      <webElementGuid>ec18e501-7a7f-45f1-bd1d-66ad758ba353</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[5]/div/button</value>
+      <webElementGuid>8baee876-4469-49c5-b3c9-79e774b15dd7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[@type = 'plain' and (text() = '
+            Mua ngay
+          ' or . = '
+            Mua ngay
+          ')]</value>
+      <webElementGuid>bc1813da-2ad6-49f1-8efa-0c9fb04cbf82</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

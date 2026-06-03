@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>icon_search</name>
+   <tag></tag>
+   <elementGuidId>a2d8ac47-7540-4e0c-959a-fb636cd2de57</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.is-pc.gt-header-right__search.gt-header-search.wow.animate__animated.animated > div.gt-header-search__wrapper > i.gt-header-search__icon.icon-font.iconfont.icon-search-big</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='page-view']/div/div[2]/div/div[3]/div/div/div/i</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>.is-pc > .gt-header-search__wrapper > .gt-header-search__icon</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>i</value>
+      <webElementGuid>742257e4-cf6c-4fb5-9d3f-3a67005d03f0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>gt-header-search__icon icon-font iconfont icon-search-big</value>
+      <webElementGuid>8d37eacf-d219-4c77-9255-7e77fc564a3e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;page-view&quot;)/div[@class=&quot;gt-layout page-layout_pc&quot;]/div[@class=&quot;gt-header common-header&quot;]/div[@class=&quot;gt-header_container&quot;]/div[@class=&quot;gt-header_container_right&quot;]/div[@class=&quot;gt-header-right__wrapper&quot;]/div[@class=&quot;is-pc gt-header-right__search gt-header-search wow animate__animated animated&quot;]/div[@class=&quot;gt-header-search__wrapper&quot;]/i[@class=&quot;gt-header-search__icon icon-font iconfont icon-search-big&quot;]</value>
+      <webElementGuid>c725dcd2-4c0c-43d1-bf51-51f12958ec35</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='page-view']/div/div[2]/div/div[3]/div/div/div/i</value>
+      <webElementGuid>75b3fc83-0b50-46ce-b29e-48352c92b5b9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div/div/div/i</value>
+      <webElementGuid>5f5ee2d0-ace9-46f2-9ae0-4de6fdfefbe4</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
