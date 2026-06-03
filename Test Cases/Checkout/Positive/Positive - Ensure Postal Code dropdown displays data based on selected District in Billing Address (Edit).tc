@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Memastikan dropdown Kode Pos pada alamat tagihan menampilkan data sesuai distrik yang dipilih saat edit alamat</description>
+   <name>Positive - Ensure Postal Code dropdown displays data based on selected District in Billing Address (Edit)</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b26107b4-fdbb-4377-8dc7-a25a2b6114ed</testCaseGuid>
+</TestCaseEntity>

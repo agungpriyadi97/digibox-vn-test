@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Memastikan guest dapat melakukan checkout pesanan</description>
+   <name>Positive - Ensure guest user can checkout order successfully</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a895e1c1-2fa6-4658-90bd-96cdb3a5c136</testCaseGuid>
+</TestCaseEntity>

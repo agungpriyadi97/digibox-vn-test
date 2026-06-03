@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>iphone 12</name>
+   <tag></tag>
+   <elementGuidId>717af3f8-4204-44df-b189-628cd94491ec</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//p[@class='product-name' and contains(text(), 'iphone 12')]/ancestor::div[@class='sp-plp-card']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.image-slot_error</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>.image-slot_error</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>1a38a414-17a6-4eda-b756-fd1087db659e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>image-slot_error</value>
+      <webElementGuid>00ce33a9-9459-44ea-a889-65f45c9697ca</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;waterfallWrapper1780386192574&quot;)/div[@class=&quot;waterfall__item waterfallItem normal&quot;]/div[1]/section[@class=&quot;gt-plp-card-switch&quot;]/div[@class=&quot;sp-plp-card&quot;]/div[@class=&quot;sp-plp-card__wrapper&quot;]/div[1]/div[@class=&quot;sp-plp-card__img&quot;]/div[@class=&quot;el-image gt-image_loading gt-image&quot;]/div[@class=&quot;image-slot_error&quot;]</value>
+      <webElementGuid>6511089a-3ecf-4295-b381-a7142c65c5a1</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='waterfallWrapper1780386192574']/div/div/section/div/div/div/div/div/div</value>
+      <webElementGuid>3e8d44c2-ea7c-4da0-bc77-2587d7a97678</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Lọc theo'])[1]/following::div[15]</value>
+      <webElementGuid>066ad831-4861-4e55-9cd1-3efeca8b1c77</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Lọc'])[1]/following::div[18]</value>
+      <webElementGuid>00351382-652d-4c86-bd4d-aebfbab95e04</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Không có dữ liệu'])[1]/preceding::div[17]</value>
+      <webElementGuid>4a197e7f-8038-4783-a587-bef271760807</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='CÔNG TY TNHH MAPPLE MITRA ADIPERKASA VIỆT NAM'])[1]/preceding::div[25]</value>
+      <webElementGuid>a18b9da0-afcc-4b16-8ccc-f8544205317a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/div/div/div/section/div/div/div/div/div/div</value>
+      <webElementGuid>149459d5-c3c4-465d-af90-b798c6f1df62</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

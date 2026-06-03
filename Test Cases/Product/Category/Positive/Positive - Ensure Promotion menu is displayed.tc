@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Memastikan menu Promotion ditampilkan</description>
+   <name>Positive - Ensure Promotion menu is displayed</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>119cbd87-c862-46a2-847e-075d1931b0fe</testCaseGuid>
+</TestCaseEntity>

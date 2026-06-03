@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Memastikan menu Mobile Phones ditampilkan</description>
+   <name>Positive - Ensure Mobile Phones menu is displayed</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8e3a0396-a609-411d-b71b-c412716cb8ea</testCaseGuid>
+</TestCaseEntity>
