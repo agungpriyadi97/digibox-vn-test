@@ -12,7 +12,7 @@
             <groupName>Web Desktop</groupName>
             <profileName>Development</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Chrome</runConfigurationId>
+            <runConfigurationId>Chrome (headless)</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Authentication/Registration</testSuiteEntity>
@@ -22,7 +22,7 @@
             <groupName>Web Desktop</groupName>
             <profileName>Development</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Chrome</runConfigurationId>
+            <runConfigurationId>Chrome (headless)</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Authentication/Login</testSuiteEntity>
@@ -32,7 +32,7 @@
             <groupName>Web Desktop</groupName>
             <profileName>Development</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Chrome</runConfigurationId>
+            <runConfigurationId>Chrome (headless)</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Authentication/Forgot_Password</testSuiteEntity>
