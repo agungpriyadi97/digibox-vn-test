@@ -20,3 +20,5 @@ import org.openqa.selenium.Keys as Keys
 'Klik Button Create an account\r\n'
 WebUI.click(findTestObject('Authentication/Registration/btn_createanaccount'))
 
+WebUI.takeScreenshot()
+
