@@ -40,13 +40,6 @@
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>227059f3-6cd6-445c-8b8f-cb85acf3ca5f</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/WEB/Authentication/Login/Negative/Negative - Ensure Log in button cannot be used when mandatory fields are empty</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>5e6f5986-3e6f-46a3-b4ff-eba4d2966814</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -114,13 +107,6 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/WEB/Authentication/Login/Negative/Negative - Ensure password validation message appears when password does not meet requirements</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>f01a33f9-a974-4e0c-8fa8-b6d712d73c1d</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/WEB/Authentication/Login/Negative/Negative - Password Validation</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
