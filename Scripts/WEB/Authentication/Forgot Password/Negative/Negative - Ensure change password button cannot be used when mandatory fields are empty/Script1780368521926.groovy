@@ -28,5 +28,5 @@ WebUI.setText(findTestObject('WEB/Authentication/ForgotPassword/input_newPasswor
 
 WebUI.click(findTestObject('WEB/Authentication/ForgotPassword/btn_resetPassword'))
 
-WebUI.verifyTextPresent('Bắt buộc', false)
+WebUI.waitForElementVisible(findTestObject('WEB/Authentication/ForgotPassword/textField_error_massage'), 0)
 

@@ -12,45 +12,45 @@
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>6037ac45-a594-4ca9-8de5-63272de9ae35</testSuiteGuid>
    <testCaseLink>
-      <guid>5e82158d-6d1e-4f7d-a21e-fdb4ce1d3287</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/WEB/Authentication/Forgot Password/Positive/Positive - Ensure user can change password successfully using valid verification code</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>3a4e5227-2d99-4ac5-aeb6-361fa65819e8</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/WEB/Authentication/Forgot Password/Positive/Positive - Ensure user can log in using newly changed password</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>15628821-eb7f-462f-bed5-85b1f7475fbf</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/WEB/Authentication/Forgot Password/Positive/Positive - Ensure verification code is sent successfully to registered email</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>2fe65ec7-db7c-4155-b92f-2c72b8d75aeb</guid>
+      <guid>0325c506-1ed1-4e2c-a98f-ed65881248a4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/WEB/Authentication/Forgot Password/Negative/Negative - Ensure change password button cannot be used when mandatory fields are empty</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>48c38eb3-90b1-493f-9b71-e9877ac2dfe2</guid>
+      <guid>be9aebaf-f768-45b7-b8be-12a357fbef4b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/WEB/Authentication/Forgot Password/Negative/Negative - Ensure forgot password fails using incorrect verification code</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>293f2bdd-ebba-4951-9cee-b3beea3268bd</guid>
+      <guid>e1bca9cf-d855-4b8b-adfa-e32ac4d1647c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/WEB/Authentication/Forgot Password/Negative/Negative - Ensure forgot password fails using unregistered account or email</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>7b5fac5e-54bf-4e6e-98c6-c2c0f4f6943a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/WEB/Authentication/Forgot Password/Positive/Positive - Ensure user can change password successfully using valid verification code</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>fa59f4eb-8da8-47bd-a1a3-a51f324d2ca5</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/WEB/Authentication/Forgot Password/Positive/Positive - Ensure user can log in using newly changed password</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b4d97be8-3c55-4e11-9374-54dbc0c5daaa</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/WEB/Authentication/Forgot Password/Positive/Positive - Ensure verification code is sent successfully to registered email</testCaseId>
       <usingDataBindingAtTestSuiteLevel>false</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

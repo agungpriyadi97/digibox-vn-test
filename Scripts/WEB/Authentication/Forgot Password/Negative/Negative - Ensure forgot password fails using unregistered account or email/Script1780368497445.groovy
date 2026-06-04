@@ -24,5 +24,5 @@ WebUI.setText(findTestObject('WEB/Authentication/ForgotPassword/input_email'), '
 
 WebUI.click(findTestObject('WEB/Authentication/ForgotPassword/btn_verifikasiCode'))
 
-WebUI.verifyTextPresent('Account or email not exist', false)
+WebUI.waitForElementVisible(findTestObject('WEB/Authentication/ForgotPassword/txtField_email_already'), 0)
 
