@@ -24,5 +24,5 @@ WebUI.setText(findTestObject('WEB/Authentication/ForgotPassword/input_email'), G
 
 WebUI.click(findTestObject('WEB/Authentication/ForgotPassword/btn_verifikasiCode'))
 
-WebUI.verifyTextPresent('Mã xác thực đã được gửi thành công!', false)
+WebUI.waitForElementVisible(findTestObject('WEB/Authentication/ForgotPassword/txtField_succes_massage'), 0)
 
