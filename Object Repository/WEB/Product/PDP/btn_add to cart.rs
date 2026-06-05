@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[@type='primary']</value>
+         <value>//button[.//span[normalize-space()='Thêm vào giỏ hàng']]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>0e3ce4b6-75e2-42c2-abbc-9dc2c4820630</webElementGuid>
+      <webElementGuid>0cc45abe-a1fa-4b25-9df3-3ab2a92dcfe1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>type</name>
       <type>Main</type>
       <value>primary</value>
-      <webElementGuid>d5e434f0-7e16-493d-8db4-4b77f57aba2e</webElementGuid>
+      <webElementGuid>f052ecc8-d66a-4ab1-936d-c176a0c7e541</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>class</name>
       <type>Main</type>
       <value>el-button el-button--primary gt-button add-btn add add-to-cart with-buy-now</value>
-      <webElementGuid>4ba90a9e-ac76-4584-aa56-4805ff06e8a4</webElementGuid>
+      <webElementGuid>759032e6-c662-4a33-b025-b262dc1e471a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -55,7 +55,7 @@
       <value>
           Thêm vào giỏ hàng
         </value>
-      <webElementGuid>c235f3b0-e01e-4606-afc6-8a8533cc152f</webElementGuid>
+      <webElementGuid>4e224eb8-5761-497b-bd4c-1c1a94396ef2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -63,7 +63,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;page-view&quot;)/div[@class=&quot;gt-layout page-layout_pc&quot;]/div[@class=&quot;page-view__child&quot;]/section[@class=&quot;page-pdp page-pdp&quot;]/section[@class=&quot;page-pdp_content&quot;]/div[@class=&quot;page-pdp_content__main&quot;]/div[@class=&quot;right&quot;]/div[@class=&quot;new-action-box&quot;]/button[@class=&quot;el-button el-button--primary gt-button add-btn add add-to-cart with-buy-now&quot;]</value>
-      <webElementGuid>4f2b2070-8ca2-405a-af19-281bec014dac</webElementGuid>
+      <webElementGuid>eb6daa9d-59b5-4e5e-bf5e-d8caecf27e94</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -71,7 +71,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//button[@type='primary']</value>
-      <webElementGuid>4e98633d-11c1-480d-bf6d-2b76295f6f73</webElementGuid>
+      <webElementGuid>618e1cf7-8005-4567-a3d7-49245fda23d7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -79,7 +79,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='page-view']/div/div[3]/section/section/div/div[2]/div[5]/button</value>
-      <webElementGuid>4da4b742-d675-403f-81bf-c5ef74491ae8</webElementGuid>
+      <webElementGuid>2e113f2d-9bf1-4483-a06a-a8e62ae53fd0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -87,7 +87,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Mua ngay'])[1]/preceding::button[1]</value>
-      <webElementGuid>c75801c6-a66f-4d06-b692-163db94d080e</webElementGuid>
+      <webElementGuid>051063f5-82e7-46ec-93b3-056899176eb0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -95,7 +95,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[5]/button</value>
-      <webElementGuid>3c063dd2-b917-46fe-a629-427efb731d9c</webElementGuid>
+      <webElementGuid>7e012135-0283-4b4c-8049-d11a29855753</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -107,6 +107,6 @@
         ' or . = '
           Thêm vào giỏ hàng
         ')]</value>
-      <webElementGuid>32e4812f-93ab-4924-8cd4-920b28d8b8d4</webElementGuid>
+      <webElementGuid>0ab972a6-b05a-4c81-9452-299e72eaa412</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

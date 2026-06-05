@@ -17,3 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.waitForElementVisible(findTestObject('WEB/Home/Header/Icon Menu/Order/icon_order'), 0)
+
+WebUI.mouseOver(findTestObject('WEB/Home/Header/Icon Menu/Order/icon_order'))
+

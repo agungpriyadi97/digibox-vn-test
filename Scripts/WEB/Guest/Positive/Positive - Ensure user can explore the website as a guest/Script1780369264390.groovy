@@ -17,3 +17,39 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.waitForElementVisible(findTestObject('WEB/Home/Header/Icon Menu/Logo Home/logo_home'), 10)
+
+WebUI.mouseOver(findTestObject('WEB/Home/Header/Icon Menu/Logo Home/logo_home'))
+
+WebUI.click(findTestObject('WEB/Home/Header/Icon Menu/Logo Home/logo_home'))
+
+WebUI.verifyElementPresent(findTestObject('WEB/Home/Header/Icon Menu/Logo Home/logo_home'), 5)
+
+WebUI.waitForElementVisible(findTestObject('WEB/Home/Header/Icon Menu/Account/icon-account'), 10)
+
+WebUI.mouseOver(findTestObject('WEB/Home/Header/Icon Menu/Account/icon-account'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('WEB/Home/Header/Icon Menu/Account/icon-account'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('WEB/Product/Category/Positive/Positive - Ensure Mobile Phones menu is displayed'), [:], 
+    FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('WEB/Product/Category/Positive/Positive - Ensure Ipad menu is displayed'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('WEB/Product/Category/Positive/Positive - Ensure Watch menu is displayed'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('WEB/Product/Category/Positive/Positive - Ensure Mac menu is displayed'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('WEB/Product/Category/Positive/Positive - Ensure Accessories menu is displayed'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('WEB/Product/Category/Positive/Positive - Ensure Audio menu is displayed'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('WEB/Product/Category/Positive/Positive - Ensure TV menu is displayed'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('WEB/Product/Category/Positive/Positive - Ensure Promo menu is displayed'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('WEB/Product/Category/Positive/Positive - Ensure Installment Plans menu is displayed'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('WEB/Product/Category/Positive/Positive - Ensure Learn more menu is displayed'), [:], FailureHandling.STOP_ON_FAILURE)
+

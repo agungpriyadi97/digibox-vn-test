@@ -17,3 +17,15 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.waitForElementVisible(findTestObject('WEB/Home/Header/Icon Menu/Logo Home/logo_home'), 10)
+
+WebUI.mouseOver(findTestObject('WEB/Home/Header/Icon Menu/Logo Home/logo_home'))
+
+WebUI.click(findTestObject('WEB/Home/Header/Icon Menu/Logo Home/logo_home'))
+
+WebUI.verifyElementPresent(findTestObject('WEB/Home/Header/Icon Menu/Logo Home/logo_home'), 5)
+
+WebUI.waitForElementVisible(findTestObject('WEB/Home/Header/Icon Menu/Account/icon-account'), 10)
+
+WebUI.mouseOver(findTestObject('WEB/Home/Header/Icon Menu/Account/icon-account'), FailureHandling.STOP_ON_FAILURE)
+
