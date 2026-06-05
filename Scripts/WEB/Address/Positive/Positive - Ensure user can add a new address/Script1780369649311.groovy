@@ -16,4 +16,18 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import utils.AddressHelper as AddressHelper
+
+// Login
+WebUI.callTestCase(findTestCase('WEB/Authentication/Login/Positive/Positive - Ensure user can log in using valid account and password'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('WEB/Home/Header/Icon Menu/Account/menu_my_address'))
+
+WebUI.waitForPageLoad(10)
+
+CustomKeywords.'utils.AddressHelper.addNewDeliveryAddress'()
+
+// Isi form dengan data random (otomatis unik, tidak akan duplikat)
+CustomKeywords.'utils.AddressHelper.fillAddressFormWithRandomData'()
 

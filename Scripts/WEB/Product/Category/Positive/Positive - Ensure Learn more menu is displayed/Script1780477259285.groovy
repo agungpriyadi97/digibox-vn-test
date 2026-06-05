@@ -25,11 +25,3 @@ WebUI.click(findTestObject('WEB/Home/Header/Menu/Menu Learn more/submenu_iPhone_
 
 WebUI.waitForPageLoad(10)
 
-WebUI.mouseOver(findTestObject('WEB/Home/Header/Menu/Menu Learn more/Menu Learn more'))
-
-WebUI.waitForElementVisible(findTestObject('WEB/Home/Header/Menu/Menu Learn more/submenu_Apple_Watch_LearnMore'), 10)
-
-WebUI.click(findTestObject('WEB/Home/Header/Menu/Menu Learn more/submenu_Apple_Watch_LearnMore'))
-
-WebUI.waitForPageLoad(10)
-

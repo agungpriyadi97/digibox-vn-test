@@ -17,3 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.callTestCase(findTestCase('WEB/Authentication/Login/Positive/Positive - Ensure user can log in using valid account and password'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('WEB/Home/Header/Icon Menu/Account/menu_my_address'))
+
+WebUI.waitForPageLoad(10)
+
+// Edit alamat delivery terakhir dengan data random
+CustomKeywords.'utils.EditAddressHelper.editLastDeliveryAddressWithRandomData'()
+
