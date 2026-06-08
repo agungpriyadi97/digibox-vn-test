@@ -17,3 +17,97 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.callTestCase(findTestCase('WEB/Authentication/Login/Positive/Positive - Ensure user can log in using valid account and password'), 
+    [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('WEB/Cart/Positive/Positive - Ensure user can add product to cart'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('WEB/Checkout/Payment/radio_one_pay'))
+
+// 2. Tunggu hingga children-item muncul (maksimal 10 detik)
+WebUI.waitForElementPresent(findTestObject('WEB/Checkout/Payment/payment_children_atm'), 10)
+
+// 3. Klik elemen children-item (misalnya untuk memilih metode pembayaran ATM)
+WebUI.click(findTestObject('WEB/Checkout/Payment/payment_children_atm'))
+
+// Order Summary
+// Verifikasi ringkasan pesanan
+String summary = WebUI.getText(findTestObject('WEB/Checkout/OrderSummary/lbl_order_summary'))
+
+WebUI.verifyMatch(summary, '.*Tóm tắt đơn hàng.*', true)
+
+// Masukkan kode promo
+not_run: WebUI.setText(findTestObject('WEB/Checkout/OrderSummary/input_promo_code'), 'DISCOUNT10')
+
+not_run: WebUI.click(findTestObject('WEB/Checkout/OrderSummary/btn_apply_promo'))
+
+// Ambil nilai total
+String total = WebUI.getText(findTestObject('WEB/Checkout/OrderSummary/txt_total'))
+
+println('Total: ' + total)
+
+// Centang checkbox setujui syarat & ketentuan
+WebUI.click(findTestObject('WEB/Checkout/OrderSummary/chk_accept_terms'))
+
+WebUI.delay(10)
+
+WebUI.click(findTestObject('WEB/Checkout/OrderSummary/button_thanh_thon_2'))
+
+WebUI.waitForPageLoad(10)
+
+//BankSelection//
+// Ketik nama bank pada kotak pencarian
+WebUI.setText(findTestObject('WEB/Checkout/Installment/BankSelection/input_search_bank'), 'ACB')
+
+WebUI.delay(2 // Tunggu hasil filter
+    )
+
+// Klik bank pertama yang muncul
+WebUI.click(findTestObject('WEB/Checkout/Installment/BankSelection/bank_list_item'))
+
+WebUI.setText(findTestObject('WEB/Checkout/Card/input_card_number'), '4000000000001091')
+
+WebUI.setText(findTestObject('WEB/Checkout/Card/input_expiration_date'), '12/28')
+
+WebUI.setText(findTestObject('WEB/Checkout/Card/input_csc'), '123')
+
+WebUI.setText(findTestObject('WEB/Checkout/Card/input_cardholder_name'), 'NGUYEN VAN A')
+
+// Pilih cicilan 6 bulan
+WebUI.waitForElementClickable(findTestObject('WEB/Checkout/Card/radio_6_months'), 15)
+
+WebUI.enhancedClick(findTestObject('WEB/Checkout/Card/radio_6_months'))
+
+WebUI.waitForElementClickable(findTestObject('WEB/Checkout/Card/chk_onepay_policy'), 10)
+
+WebUI.click(findTestObject('WEB/Checkout/Card/chk_onepay_policy'), FailureHandling.STOP_ON_FAILURE)
+
+// Klik tombol Agree & Continue
+WebUI.click(findTestObject('WEB/Checkout/Installment/BankSelection/btn_cancel_transaction'))
+
+// Klik tombol Confirm
+WebUI.click(findTestObject('WEB/Checkout/ConfirmDialog/btn_confirm'))
+
+WebUI.waitForPageLoad(10)
+
+// Verifikasi halaman gagal
+WebUI.waitForElementVisible(findTestObject('WEB/Checkout/PaymentResult/lbl_payment_failed'), 10)
+
+String errorTitle = WebUI.getText(findTestObject('WEB/Checkout/PaymentResult/lbl_payment_failed'))
+
+WebUI.verifyMatch(errorTitle, 'Có lỗi xảy ra', false)
+
+// Verifikasi teks deskripsi (opsional)
+String errorDesc = WebUI.getText(findTestObject('WEB/Checkout/PaymentResult/txt_error_desc'))
+
+WebUI.verifyMatch(errorDesc, 'Thanh toán không thành côn', false)
+
+// Klik tombol lanjut belanja
+WebUI.click(findTestObject('WEB/Checkout/PaymentResult/button_Tip tc mua sm(continue shopping_)'))
+
+WebUI.waitForPageLoad(10)
+
+WebUI.click(findTestObject('WEB/Checkout/Payment/btn_thanh_toan_ngay'))
+
+WebUI.waitForPageLoad(10)
+

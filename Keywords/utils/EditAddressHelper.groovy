@@ -68,4 +68,34 @@ public class EditAddressHelper {
 		int random8Digits = ThreadLocalRandom.current().nextInt(10000000, 99999999)
 		return prefix + random8Digits
 	}
+	
+	// ========================= EDIT DELIVERY ADDRESS =========================
+	@Keyword
+	def editLastBillingAddressWithRandomData() {
+		// Klik tombol edit pada alamat terakhir
+		WebUI.click(findTestObject('WEB/Address/Billing address/btn_edit_billing_address'))
+		WebUI.delay(2) // tunggu form edit terbuka
+		
+		// Generate data random
+		long timestamp = System.currentTimeMillis()
+		Random random = new Random()
+		String newFirstName = "Agung"
+		String newLastName = "Priyadi_Edit_" + timestamp
+		String newMobile = generateRandomPhoneNumber()
+		String newEmail = "edit_" + timestamp + "@yopmail.com"
+		String newAddress = "Jl. Edit No. " + random.nextInt(999)
+		String newZip = "100000"
+		
+		// Isi form edit
+		WebUI.setText(findTestObject('WEB/Address/Billing address/input_billing_first_name'), newFirstName)
+		WebUI.setText(findTestObject('WEB/Address/Billing address/input_billing_last_name'), newLastName)
+		WebUI.setText(findTestObject('WEB/Address/Billing address/input_billing_mobile'), newMobile)
+		WebUI.setText(findTestObject('WEB/Address/Billing address/input_billing_email'), newEmail)
+		WebUI.setText(findTestObject('WEB/Address/Billing address/input_billing_address'), newAddress)
+		WebUI.setText(findTestObject('WEB/Address/Billing address/input_billing_zip'), newZip) // tidak perlu clearText
+		
+		// Simpan perubahan
+		WebUI.click(findTestObject('WEB/Address/Billing address/btn_billing_save'))
+		WebUI.waitForPageLoad(10)
+	}
 }

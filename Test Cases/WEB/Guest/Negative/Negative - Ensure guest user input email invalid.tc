@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>memastikan user tamu tidak bisa checkout dengan email yang tidak valid</description>
+   <name>Negative - Ensure guest user input email invalid</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c1373ce7-713a-4c3a-822e-1df377312083</testCaseGuid>
+</TestCaseEntity>
