@@ -17,3 +17,27 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+// Klik tombol icon order
+WebUI.mouseOver(findTestObject('WEB/Home/Header/Icon Menu/Order/icon_order'))
+
+WebUI.click(findTestObject('WEB/Home/Header/Icon Menu/Order/icon_order'))
+
+// Masukkan email
+WebUI.setText(findTestObject('WEB/TrackOrder/input_email'), 'agung.priyadi97@gmail.com')
+
+// Klik tombol kirim kode verifikasi (jika sudah aktif)
+WebUI.waitForElementClickable(findTestObject('WEB/TrackOrder/btn_send_code'), 10)
+
+WebUI.click(findTestObject('WEB/TrackOrder/btn_send_code'))
+
+WebUI.waitForElementVisible(findTestObject('WEB/TrackOrder/msg_verification_sent'), 10)
+
+// Tunggu beberapa saat (opsional)
+WebUI.delay(2)
+
+// Masukkan kode verifikasi (misal: 123456)
+WebUI.setText(findTestObject('WEB/TrackOrder/input_verification_code'), '123456')
+
+// Klik tombol Tiếp tục
+WebUI.click(findTestObject('WEB/TrackOrder/btn_continue'))
+
