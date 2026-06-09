@@ -30,11 +30,6 @@ String summary = WebUI.getText(findTestObject('WEB/Checkout/OrderSummary/lbl_ord
 
 WebUI.verifyMatch(summary, '.*Tóm tắt đơn hàng.*', true)
 
-// Masukkan kode promo
-not_run: WebUI.setText(findTestObject('WEB/Checkout/OrderSummary/input_promo_code'), 'DISCOUNT10')
-
-not_run: WebUI.click(findTestObject('WEB/Checkout/OrderSummary/btn_apply_promo'))
-
 // Ambil nilai total
 String total = WebUI.getText(findTestObject('WEB/Checkout/OrderSummary/txt_total'))
 
@@ -49,8 +44,10 @@ WebUI.click(findTestObject('WEB/Checkout/OrderSummary/button_thanh_thon_2'))
 
 WebUI.waitForPageLoad(10)
 
-// ========================= VERIFIKASI ELEMEN GATEWAY =========================
-WebUI.waitForElementVisible(findTestObject('WEB/ZaloPayGateway/lbl_order_info'), 10)
+// ========================= VERIFIKASI GATEWAY ZALOPAY =========================
+WebUI.waitForElementVisible(findTestObject('WEB/ZaloPayGateway/merchant_logo'), 10)
+
+WebUI.verifyElementPresent(findTestObject('WEB/ZaloPayGateway/merchant_name'), 5)
 
 WebUI.verifyElementPresent(findTestObject('WEB/ZaloPayGateway/option_open_zalopay_app'), 5)
 

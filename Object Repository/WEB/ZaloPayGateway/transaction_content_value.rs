@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>logo_zalopay_gateway</name>
+   <name>transaction_content_value</name>
    <tag></tag>
-   <elementGuidId>8b471d50-8d5e-4d6b-b2b7-4c22dade87ac</elementGuidId>
+   <elementGuidId>13cdcae3-04c4-4220-8484-de0d9b52eb53</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//img[contains(@src, 'logo.svg')]</value>
+         <value>//div[contains(@class, 'order-information_transaction_info')]//h3</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
