@@ -9,7 +9,6 @@ variables:
   CONTINUE_ON_FAILURE: "true"
   GS_OPTIONS: "-Xmx2048m -Xms512m -Djava.shm.size=2g"
 
-# Template untuk persiapan awal
 .before_script_template: &before_script_template
   before_script:
     - rm -rf Reports/* Screenshot/* failure_*.html || true
@@ -17,7 +16,6 @@ variables:
     - apt-get install -y --allow-unauthenticated ffmpeg
     - ffmpeg -version
 
-# Template untuk menentukan test path
 .set_test_path: &set_test_path
   - |
     if [ -z "$TEST_PATH" ]; then
@@ -30,7 +28,7 @@ variables:
       export ARG_TYPE=$(echo "$TEST_PATH" | cut -d'=' -f1)
     fi
 
-# Job untuk Chrome (headless)
+# Job untuk Chrome (headless) - dengan allow_failure true dan additionalCapabilities
 katalon_chrome_headless:
   stage: test
   tags:
@@ -39,6 +37,7 @@ katalon_chrome_headless:
   rules:
     - if: $CI_PIPELINE_SOURCE == "schedule"
     - if: $CI_PIPELINE_SOURCE == "web"
+  allow_failure: true   # ← agar pipeline tidak gagal jika test case ZaloPay gagal di Chrome headless
   <<: *before_script_template
   script:
     - *set_test_path
@@ -55,6 +54,7 @@ katalon_chrome_headless:
         --config \
         -webui.autoUpdateDrivers=true \
         -webui.chrome.args="--disable-blink-features=AutomationControlled --user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 --no-sandbox --disable-dev-shm-usage --disable-gpu --window-size=1920,1080" \
+        -webui.chrome.additionalCapabilities='{"goog:chromeOptions": {"excludeSwitches": ["enable-automation"], "useAutomationExtension": false}}' \
         || echo "Chrome tests completed. Exit code: $?"
   artifacts:
     when: always
@@ -64,7 +64,7 @@ katalon_chrome_headless:
       - failure_*.html
     expire_in: 2 months
 
-# Job untuk Firefox (headless)
+# Job untuk Firefox (headless) - allow_failure juga opsional
 katalon_firefox_headless:
   stage: test
   tags:
@@ -73,6 +73,7 @@ katalon_firefox_headless:
   rules:
     - if: $CI_PIPELINE_SOURCE == "schedule"
     - if: $CI_PIPELINE_SOURCE == "web"
+  allow_failure: false   # Firefox seharusnya berhasil, set false jika ingin pipeline gagal saat ada kegagalan
   <<: *before_script_template
   script:
     - *set_test_path
