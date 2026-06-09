@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>radio_zalopay</name>
+   <name>option_domestic_card</name>
    <tag></tag>
-   <elementGuidId>84cfaebd-fb16-4937-af9e-6038c9401fbc</elementGuidId>
+   <elementGuidId>607d1780-7d58-4e02-a226-323e7854f347</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//label[@label='zalopay']</value>
+         <value>//h2[contains(text(), 'Thẻ/ tài khoản nội địa')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

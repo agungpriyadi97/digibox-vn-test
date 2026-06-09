@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>radio_zalopay</name>
+   <name>link_back_to_previous_page</name>
    <tag></tag>
-   <elementGuidId>84cfaebd-fb16-4937-af9e-6038c9401fbc</elementGuidId>
+   <elementGuidId>d6615523-f297-43c0-b383-7846478f4fc2</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//label[@label='zalopay']</value>
+         <value>//a[normalize-space()='Quay về trang trước']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
