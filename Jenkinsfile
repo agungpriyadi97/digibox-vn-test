@@ -11,7 +11,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                url: 'https://github.com/USERNAME/digibox-vn-test.git'
+                url: 'https://github.com/agungpriyadi97/digibox-vn-test.git'
             }
         }
 
