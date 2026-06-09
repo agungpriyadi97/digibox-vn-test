@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>radio_zalopay</name>
+   <name>lbl_order_info</name>
    <tag></tag>
-   <elementGuidId>84cfaebd-fb16-4937-af9e-6038c9401fbc</elementGuidId>
+   <elementGuidId>bdcf2f91-09af-4188-8067-500d7d90de60</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//label[@label='zalopay']</value>
+         <value>//*[@id=&quot;right-side&quot;]/div[1]/div/h1</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

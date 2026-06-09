@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>radio_zalopay</name>
+   <name>timer_countdown</name>
    <tag></tag>
-   <elementGuidId>84cfaebd-fb16-4937-af9e-6038c9401fbc</elementGuidId>
+   <elementGuidId>ba7c4636-db05-489a-91e8-b935b10d82b9</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//label[@label='zalopay']</value>
+         <value>/html/body/div/main/div[1]/div[2]/div/div[1]/div[1]/div/div[6]/div</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

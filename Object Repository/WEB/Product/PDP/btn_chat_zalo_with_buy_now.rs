@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Chat Zalo</name>
+   <name>btn_chat_zalo_with_buy_now</name>
    <tag></tag>
    <elementGuidId>524a3083-4ba8-44c6-ae04-6f973c772df9</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>button.el-button.add-btn.el-button--plain.gt-button.with-buy-now</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>(//button[@type='plain'])[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>button.el-button.add-btn.el-button--plain.gt-button.with-buy-now</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
