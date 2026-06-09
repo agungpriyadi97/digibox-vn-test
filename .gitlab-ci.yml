@@ -9,35 +9,41 @@ variables:
   CONTINUE_ON_FAILURE: "true"
   GS_OPTIONS: "-Xmx2048m -Xms512m -Djava.shm.size=2g"
 
-katalon_digiboxvn_test:
-  stage: test
-  tags:
-    - infra
-  timeout: 12h  
-  rules:
-    - if: $CI_PIPELINE_SOURCE == "schedule"
-    - if: $CI_PIPELINE_SOURCE == "web"
-  
+# Template untuk persiapan awal
+.before_script_template: &before_script_template
   before_script:
     - rm -rf Reports/* Screenshot/* failure_*.html || true
     - apt-get update -o Acquire::AllowInsecureRepositories=true -o Doomsday::Ignore=true -y || true
     - apt-get install -y --allow-unauthenticated ffmpeg
     - ffmpeg -version
 
+# Template untuk menentukan test path
+.set_test_path: &set_test_path
+  - |
+    if [ -z "$TEST_PATH" ]; then
+      echo "Running default Digibox Regression Collection..."
+      export FINAL_PATH="Test Suites/WEB/Web_Test_Suite_Collection/Regression_Digiboxvn_Web"
+      export ARG_TYPE="-testSuiteCollectionPath"
+    else
+      echo "Running custom test: $TEST_PATH"
+      export FINAL_PATH=$(echo "$TEST_PATH" | cut -d'=' -f2)
+      export ARG_TYPE=$(echo "$TEST_PATH" | cut -d'=' -f1)
+    fi
+
+# Job untuk Chrome (headless)
+katalon_chrome_headless:
+  stage: test
+  tags:
+    - infra
+  timeout: 12h
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+    - if: $CI_PIPELINE_SOURCE == "web"
+  <<: *before_script_template
   script:
+    - *set_test_path
     - curl ifconfig.me
     - |
-      if [ -z "$TEST_PATH" ]; then
-        echo "Running default Digibox Regression Collection..."
-        # Gunakan ekstensi .tsc jika file adalah Test Suite Collection
-        export FINAL_PATH="Test Suites/WEB/Web_Test_Suite_Collection/Regression_Digiboxvn_Web"
-        export ARG_TYPE="-testSuiteCollectionPath"
-      else
-        echo "Running custom test: $TEST_PATH"
-        export FINAL_PATH=$(echo "$TEST_PATH" | cut -d'=' -f2)
-        export ARG_TYPE=$(echo "$TEST_PATH" | cut -d'=' -f1)
-      fi
-
       echo "Starting Execution: Chrome (Headless)..."
       katalonc.sh -noSplash -runMode=console \
         -projectPath="$CI_PROJECT_DIR/digibox-vn.prj" \
@@ -49,29 +55,46 @@ katalon_digiboxvn_test:
         --config \
         -webui.autoUpdateDrivers=true \
         -webui.chrome.args="--disable-blink-features=AutomationControlled --user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 --no-sandbox --disable-dev-shm-usage --disable-gpu --window-size=1920,1080" \
-        || echo "Chrome tests completed."
-
-      # Opsional: Firefox bisa diaktifkan nanti setelah Chrome berhasil
-      # echo "Starting Execution: Firefox (Headless)..."
-      # katalonc.sh -noSplash -runMode=console \
-      #   -projectPath="$CI_PROJECT_DIR/digibox-vn.prj" \
-      #   -retry=0 -apiKey="$KATALON_API_KEY" \
-      #   "$ARG_TYPE=$FINAL_PATH" \
-      #   -browserType="Firefox (headless)" \
-      #   -reportFolder="Reports/Firefox_Reports" \
-      #   -reportFileName="Firefox_Report" \
-      #   --config -webui.autoUpdateDrivers=true \
-      #   -webui.firefox.args="-headless -width 1920 -height 1080" \
-      #   -webui.firefox.preferences="dom.webdriver.enabled=false; useAutomationExtension=false" \
-      #   || echo "Firefox tests completed."
-
-    - echo "Cleaning up old video files..."
-    - find Reports/ -type f -name "*.mp4" -mtime +30 -exec rm -f {} \; || true
-
+        || echo "Chrome tests completed. Exit code: $?"
   artifacts:
     when: always
     paths:
-      - Reports/
+      - Reports/Chrome_Reports/
       - Screenshot/
       - failure_*.html
-    expire_in: 2 mos
+    expire_in: 2 months
+
+# Job untuk Firefox (headless)
+katalon_firefox_headless:
+  stage: test
+  tags:
+    - infra
+  timeout: 12h
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+    - if: $CI_PIPELINE_SOURCE == "web"
+  <<: *before_script_template
+  script:
+    - *set_test_path
+    - curl ifconfig.me
+    - |
+      echo "Starting Execution: Firefox (Headless)..."
+      katalonc.sh -noSplash -runMode=console \
+        -projectPath="$CI_PROJECT_DIR/digibox-vn.prj" \
+        -retry=0 -apiKey="$KATALON_API_KEY" \
+        "$ARG_TYPE=$FINAL_PATH" \
+        -browserType="Firefox (headless)" \
+        -reportFolder="Reports/Firefox_Reports" \
+        -reportFileName="Firefox_Report" \
+        --config \
+        -webui.autoUpdateDrivers=true \
+        -webui.firefox.args="-headless -width 1920 -height 1080" \
+        -webui.firefox.preferences="dom.webdriver.enabled=false; useAutomationExtension=false" \
+        || echo "Firefox tests completed. Exit code: $?"
+  artifacts:
+    when: always
+    paths:
+      - Reports/Firefox_Reports/
+      - Screenshot/
+      - failure_*.html
+    expire_in: 2 months
